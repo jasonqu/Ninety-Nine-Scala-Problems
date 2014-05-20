@@ -190,6 +190,7 @@ Example:
 * P23 (**) Extract a given number of randomly selected elements from a list.
 
 Example:
+
 	scala> randomSelect(3, List('a, 'b, 'c, 'd, 'f, 'g, 'h))
 	res0: List[Symbol] = List('e, 'd, 'a)
 
@@ -208,6 +209,14 @@ Example:
 
 	scala> randomPermute(List('a, 'b, 'c, 'd, 'e, 'f))
 	res0: List[Symbol] = List('b, 'a, 'd, 'c, 'e, 'f)
+
+related topic:
+
+* http://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
+* http://blog.codinghorror.com/the-danger-of-naivete/
+* http://bost.ocks.org/mike/shuffle/
+* http://www.i-programmer.info/programming/theory/2744-how-not-to-shuffle-the-kunth-fisher-yates-algorithm.html
+* **TODO : [perfect shuffle](http://okmij.org/ftp/Haskell/perfect-shuffle.txt)**
 
 * P26 (**) Generate the combinations of K distinct objects chosen from the N elements of a list.
 
@@ -235,6 +244,8 @@ Example:
 Note that we do not want permutations of the group members; i.e. ((Aldo, Beat), ...) is the same solution as ((Beat, Aldo), ...). However, we make a difference between ((Aldo, Beat), (Carla, David), ...) and ((Carla, David), (Aldo, Beat), ...).
 
 You may find more about this combinatorial problem in a good book on discrete mathematics under the term "multinomial coefficients".
+
+**TODO compile error**
 
 * P28 (**) Sorting a list of lists according to length of sublists.
 
